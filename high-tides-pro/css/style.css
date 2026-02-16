@@ -1,0 +1,74 @@
+body {
+margin:0;
+font-family:system-ui,sans-serif;
+background:#0b132b;
+color:white;
+}
+
+.nav {
+display:flex;
+justify-content:space-between;
+padding:1rem 2rem;
+background:#1c2541;
+position:sticky;
+top:0;
+}
+
+.nav a {
+color:white;
+margin-left:1rem;
+text-decoration:none;
+}
+
+.hero {
+padding:6rem 2rem;
+text-align:center;
+}
+
+.cards {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:1.5rem;
+padding:2rem;
+}
+
+.card {
+background:#1c2541;
+padding:2rem;
+border-radius:12px;
+text-align:center;
+}
+
+.page {
+padding:4rem 2rem;
+text-align:center;
+}
+
+footer {
+text-align:center;
+padding:1.5rem;
+background:#1c2541;
+}
+
+/* Animations */
+.fade-in {
+opacity:0;
+transform:translateY(20px);
+transition:all .8s ease;
+}
+
+.fade-in.visible {
+opacity:1;
+transform:none;
+}
+
+.slide-up {
+opacity:0;
+transform:translateY(40px);
+transition:all .8s ease;
+}
+
+.slide-up.visible {
+opacity:1;
+transform:none;
+}
